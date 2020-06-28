@@ -1,3 +1,1 @@
-function change_img(){
-    var state = 
-}
+puoduct.style.width = document.body.clientWidth

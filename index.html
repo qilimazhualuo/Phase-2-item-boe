@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid head d-flex align-items-stretch">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo"></a>
+            <button id="menu" data-toggle="collapse" data-target="#menu-hidden" onclick="change_img()" class="d-sm-inline-block d-lg-none">
+                <input class="d-none" type="radio" name="r" id="r1">
+                <input class="d-none" type="radio" name="r" id="r2">
+                <label for="r1" id="menu-1"></label>
+                <label for="r2" id="menu-2"></label>
+            </button>
+            <div class="row no-gutters nav-box d-sm-none d-lg-flex">
+                <div class="col-5">
+                        <ul class="navigation-frame d-flex justify-content-around list-unstyled mb-0">
+                            <!-- <li><a href="#" class="logo"></a></li> -->
+                            <li id="product-btn" class="navigation-list d-inline-block"><a class="d-block navigation-link" href="#">产品与服务</a></li>
+                                <div id="product" class="row no-gutters">
+                                    <ul class="col">
+                                        <li>端口器件</li>
+                                        <li>显示与传感器件</li>
+                                        <li>传感器及解决方案</li>
+                                    </ul>
+                                    <ul class="col">
+                                        <li>智慧物联</li>
+                                        <li>loT解决方案</li>
+                                        <li>制造服务</li>
+                                        <li>数字义属</li>
+                                    </ul>
+                                    <ul class="col">
+                                        <li>智慧医工</li>
+                                        <li>移动健康</li>
+                                        <li>健康服务</li>
+                                    </ul>
+                                </div>
+                            <li class="navigation-list d-inline-block"><a class="d-block navigation-link" href="#">创新科技</a></li>
+                            <li class="navigation-list d-inline-block"><a class="d-block navigation-link" href="#">新闻中心</a></li>
+                            <li class="navigation-list d-inline-block"><a class="d-block navigation-link" href="#">BOE商城</a></li>
+                        </ul>
+                </div>
+                <div class="col-5 offset-2">
+                        <ul class="d-sm-none d-lg-flex justify-content-around list-unstyled mb-0">
+                            <li class="navigation"><a class="d-block navigation-link1" href="#">关于我们</a></li>
+                            <li class="navigation"><a class="d-block navigation-link1" href="#">投资者关系</a></li>
+                            <li class="navigation"><a class="d-block navigation-link1" href="#">加入我们</a></li>
+                            <li class="navigation"><a class="d-block navigation-link1" href="#">多媒体中心</a></li>
+                        </ul>
+                    <div>
+                        <ul class="d-sm-none d-lg-flex row justify-content-around list-unstyled mb-0">
+                            <span class="col-7 d-flex align-items-center justify-content-around pl-0">
+                                <input class="col border border-muted rounded py-1" type="text" placeholder="请输入关键词">
+                                <a href="#" id="btn-search"></a>
+                            </span>
+                            <li class="navigation"><a class="d-block navigation-link1" href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-hidden" class="collapse">
+            <ul class="list-unstyled mb-1">
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">产品与服务<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">创新科技<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">新闻中心<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">BOE商城<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">关于我们<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">投资者关系<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">加入我们<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">多媒体中心<span class="lcon-bottom">></span></a></li>
+                <li class="px-3"><a class="text-dark py-3 d-block d-flex justify-content-between border-bottom border-dark pr-3" href="#">English<span class="lcon-bottom">></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header结束 -->
+    <!-- 轮播图 -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+			 
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+       
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#"><img class="w-100" src="img/untitled.png"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img class="w-100" src="img/untitled1.png"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img class="w-100" src="img/untitled3.png"></a>
+          </div>
+        </div>
+       
+        <!-- 左右切换按钮 -->
+        <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a> -->
+       
+      </div>
+    <!-- 轮播图结束 定时轮播未完成 -->
+    <!-- 产品与服务 -->
+    <div class="container">
+        <h2 class="text-center my-4">产品与服务</h2>
+        <div class="row no-gutters text-center h5">
+            <div class="card-container col-sm-12 col-md-4">
+                <a href="#"><img class="w-100 img-product" src="img/04c47403-6913-4e67-9980-23519d27183a.jpg.png" alt=""></a>
+                <a class="header" href="#" class="">
+                    <p class="header-card">端口器件</p>
+                </a>
+            </div>
+            <div class="card-container col-sm-12 col-md-4">
+                <a href="#"><img class="w-100 img-product" src="img/e0e18f83-76d8-46dc-9c37-2b51553159b8.jpg.png" alt=""></a>
+                <a class="header" href="#" class="">
+                    <p class="header-card">智慧物联</p>
+                </a>
+            </div>
+            <div class="card-container col-sm-12 col-md-4">
+                <a href="#"><img class="w-100 img-product" src="img/247e1ec1-5b8f-450c-a710-e3b608e92327.jpg.png" alt=""></a>
+                <a class="header" href="#" class="">
+                    <p class="header-card">智慧医工</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 产品与服务结束 -->
+    <div class="container tech text-center">
+        <h2><a class="text-dark" href="#">创新科技</a></h2>
+        <a href="#">
+            <img class="w-100" src="img/untitled4.png" alt="">
+        </a>
+    </div>
+    <!-- 新闻热点 -->
+    <div class="container">
+        <h2 class="text-center my-4">新闻热点</h2>
+        <div class="row no-gutters align-items-stretch">
+            <div class="col-sm-12 col-md-4 px-2 my-2 d-flex align-items-stretch">
+                <div class="bg-light">
+                    <img src="img/untitled5.png" class="w-100" alt="">
+                    <div class="p-2">
+                        <p>BOE（京东方）智慧显示系统解决方案 惊艳亮相中华人民共和国成立70周年庆祝活动</p>
+                        <a href="#">阅读全文></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 px-2 my-2 d-flex align-items-stretch">
+                <div class="bg-light">
+                    <img src="img/untitled5.png" class="w-100" alt="">
+                    <div class="p-2">
+                        <p>BOE（京东方）推百万级对比度BD Cell显示技术</p>
+                        <a href="#">阅读全文></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 px-2 my-2 d-flex align-items-stretch">
+                <div class="bg-light">
+                    <img src="img/untitled5.png" class="w-100" alt="">
+                    <div class="p-2">
+                        <p>直击SID 2019：BOE（京东方）创新显示技术带你感受前沿科技魅力</p>
+                        <a href="#">阅读全文></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻热点结束 -->
+    <iframe src="footer.html" class="footer" frameborder="0"></iframe>
+</body>
+</html>

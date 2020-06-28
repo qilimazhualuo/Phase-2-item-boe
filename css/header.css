@@ -1,0 +1,119 @@
+.head{
+    height: 90px;
+}
+.nav-box{
+    flex-grow: 1;
+}
+.logo{
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+    /* margin-bottom: 20px; */
+    background: url(../img/headerLogo.png) no-repeat 0 -5px;
+    background-size: 100%;
+}
+.navigation-frame{
+    margin-top: 40px;
+    position: relative;
+}
+
+.navigation-link{
+    height: 50px;
+    color: #000;
+}
+.navigation-link:hover{
+    height: 50px;
+    font-weight: bold;
+    border-bottom: 3px solid #3F3F3F;
+    text-decoration: none;
+    color: #000;
+}
+.navigation-link1{
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+}
+.navigation-link1:hover{
+    text-decoration: none;
+    color: #000;
+}
+#btn-search{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/nav-icon.png) no-repeat -118px center;
+}
+#menu-hidden{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 16;
+    background-color: #fff;
+}
+.lcon-bottom{
+    transform: rotate(90deg);
+}
+#menu{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    padding: 0;
+    border-radius: 0.2rem;
+}
+#menu-1,#menu-2{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/Category.png) no-repeat center center;
+    background-size: 80%;
+    transition: 0.5s;
+}
+#menu-1{
+    background-image: url(../img/Category.png);
+    z-index: 5;
+}
+#menu-2{
+    background-image: url(../img/close.png);
+    z-index: 1;
+    opacity: 0;
+}
+
+#r1:checked~#menu-1{
+    transform: rotate(90deg);
+    z-index: 1;
+    opacity: 0;
+}
+#r1:checked~#menu-2{
+    z-index: 5;
+    opacity: 1;
+}
+
+#r2:checked~#menu-2{
+    transform: rotate(90deg);
+    z-index: 1;
+    opacity: 0;
+}
+#r2:checked~#menu-1{
+    z-index: 5;
+    opacity: 1;
+}
+#product{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+#product-btn:hover~#product{
+    display: block;
+}
+#product:hover{
+    display: block;
+}

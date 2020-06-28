@@ -1,0 +1,31 @@
+body{
+	background-color: #fff;
+	font: 16px "微软雅黑", Arial, Helvetica, sans-serif;
+}
+.font-small{
+	font-size: 0.8rem;
+}
+.header{
+	width: 100%;
+	border: 0;
+}
+.footer{
+	width: 100%;
+	border: 0;
+}
+@media (min-width:576px){
+	.header{
+		height: 90px;
+	}
+	.footer{
+		height: 32rem;
+	}
+}
+@media (min-width:992px){
+	.header{
+		height: 90px;
+	}
+	.footer{
+		height: 20rem;
+	}
+}

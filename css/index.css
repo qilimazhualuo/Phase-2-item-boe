@@ -1,0 +1,62 @@
+/* .carousel-control-prev,.carousel-control-next{
+	width: 30px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.2);
+	top: 50%;
+	transform: translate(0,-50%);
+}
+.carousel-control-prev{
+    left: 1rem;
+}
+.carousel-control-next{
+	right: 1rem;
+} */
+.carousel-indicators>li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.carousel-indicators>.active{
+	background-color: #18A8E8;
+}
+/* 以上为轮播图 */
+.header{
+    color: #000;
+}
+.header:hover{
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width:761.99px){
+    .header-card{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        
+        background-color: rgba(0,0,0,0.2);
+        padding: 0.5rem;
+    }
+    .tech{
+        max-width: 100% !important;
+        padding: 0;
+    }
+}
+@media (min-width:762px){
+    .card-container{
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    
+    .header-card{
+        padding: 1rem;
+    }
+}
+.img-product{
+    transition: 0.7s;
+}
+.img-product:hover{
+    transform: scale(1.1);
+}
+/* 以上为产品与服务 */
